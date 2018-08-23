@@ -13,12 +13,11 @@
  * Created on March 19, 2018, 11:57 PM
  */
 
-#include <iostream>
+#include <iostream>   // For  cout & cin functions
 
 using namespace std;
 
 int main() {
-    
     int number, hundreds, tens, ones;
     
     // Asking for entering input
@@ -30,9 +29,8 @@ int main() {
     tens = number % 100 / 10;
     ones = number % 10;
     
-     //Print the result
-     cout << "The sum of the digits is " << hundreds + tens + ones;
-
+    //Print the result
+    cout << "The sum of the digits is " << hundreds + tens + ones;
 
     return 0;
 }
