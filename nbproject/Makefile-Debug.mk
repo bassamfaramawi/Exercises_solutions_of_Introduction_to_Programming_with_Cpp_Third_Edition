@@ -34,7 +34,9 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/Chapter04/Exercise01_04.o \
+	${OBJECTDIR}/Chapter04/Exercise02_04.o
 
 
 # C Compiler Flags
@@ -59,7 +61,17 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises_solutions_of_introduction_to_programming_with_c____third_edition.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises_solutions_of_introduction_to_programming_with_c____third_edition ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises_solutions_of_introduction_to_programming_with_c____third_edition ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Chapter04/Exercise01_04.o: Chapter04/Exercise01_04.cpp
+	${MKDIR} -p ${OBJECTDIR}/Chapter04
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Chapter04/Exercise01_04.o Chapter04/Exercise01_04.cpp
+
+${OBJECTDIR}/Chapter04/Exercise02_04.o: Chapter04/Exercise02_04.cpp
+	${MKDIR} -p ${OBJECTDIR}/Chapter04
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Chapter04/Exercise02_04.o Chapter04/Exercise02_04.cpp
 
 # Subprojects
 .build-subprojects:
