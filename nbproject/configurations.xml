@@ -24,8 +24,6 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>Chapter04/Exercise01_04.cpp</itemPath>
-    <itemPath>Chapter04/Exercise02_04.cpp</itemPath>
   </logicalFolder>
   <sourceRootList>
     <Elem>Chapter02</Elem>
@@ -40,10 +38,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Chapter04/Exercise01_04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Chapter04/Exercise02_04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -65,10 +59,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Chapter04/Exercise01_04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Chapter04/Exercise02_04.cpp" ex="false" tool="1" flavor2="0">
-      </item>
     </conf>
   </confs>
 </configurationDescriptor>
