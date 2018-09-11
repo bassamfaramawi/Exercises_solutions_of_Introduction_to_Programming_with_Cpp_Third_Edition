@@ -20,7 +20,7 @@ and 2p, and the point determined by this angle is (r*cos(a), r*sin(a)).)
 
 using namespace std;
 
-int main(int argc, char** argv) {
+int main() {
     double r = 40;   // The circle radius
     
     srand(time(0));  // set the seed of rand function
