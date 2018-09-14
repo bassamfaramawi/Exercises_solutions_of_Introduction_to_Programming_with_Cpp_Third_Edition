@@ -1,4 +1,4 @@
-/*
+﻿/*
  *3.5 (Find future dates) Write a program that prompts the user to enter an 
 integer fo today’s day of the week (Sunday is 0, Monday is 1, …, and Saturday 
 is 6). Also prompt the user to enter the number of days after today for a future 
@@ -31,19 +31,19 @@ int main() {
         cin >> elapsed;    // Receive value
             
         switch(today)  {
-            case 1: cout << "Today is Sunday";
+            case 0: cout << "Today is Sunday";
                     break;
-            case 2: cout << "Today is Monday";
+            case 1: cout << "Today is Monday";
                     break;
-            case 3: cout << "Today is Tuesday";
+            case 2: cout << "Today is Tuesday";
                     break;
-            case 4: cout << "Today is Wednesday";
+            case 3: cout << "Today is Wednesday";
                     break;
-            case 5: cout << "Today is Thursday";
+            case 4: cout << "Today is Thursday";
                     break;
-            case 6: cout << "Today is Friday";
+            case 5: cout << "Today is Friday";
                     break;
-            case 7: cout << "Today is Saturday";
+            case 6: cout << "Today is Saturday";
                     break;
         }
         
@@ -51,19 +51,19 @@ int main() {
         //Compute the future day
         int future = (today + elapsed) % 7;
         switch(future)  {
-            case 1: cout << " and the future day is Sunday";
+            case 0: cout << " and the future day is Sunday";
                     break;
-            case 2: cout << " and the future day is Monday";
+            case 1: cout << " and the future day is Monday";
                     break;
-            case 3: cout << " and the future day is Tuesday";
+            case 2: cout << " and the future day is Tuesday";
                     break;
-            case 4: cout << " and the future day is Wednesday";
+            case 3: cout << " and the future day is Wednesday";
                     break;
-            case 5: cout << " and the future day is Thursday";
+            case 4: cout << " and the future day is Thursday";
                     break;
-            case 6: cout << " and the future day is Friday";
+            case 5: cout << " and the future day is Friday";
                     break;
-            case 7: cout << " and the future day is Saturday";
+            case 6: cout << " and the future day is Saturday";
                     break;
         }
     }
