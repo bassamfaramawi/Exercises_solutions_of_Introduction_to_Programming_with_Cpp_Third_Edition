@@ -23,11 +23,11 @@ int main() {
     cin >> number;  // Receive value
     
     // Check the cases and display the result
-    cout << "Is 10 divisible by 5 and 6? " << 
+    cout << "Is " + number + " divisible by 5 and 6? " << 
             ((number % 5 == 0 && number % 6 == 0) ? "true" : "false") << endl;
-    cout << "Is 10 divisible by 5 or 6? " << 
+    cout << "Is " + number + " divisible by 5 or 6? " << 
             ((number % 5 == 0 || number % 6 == 0) ? "true" : "false") << endl;
-    cout << "Is 10 divisible by 5 and 6, but not both? " <<
+    cout << "Is " + number + " divisible by 5 and 6, but not both? " <<
             ((number % 5 == 0 ^ number % 6 == 0) ? "true" : "false");
 
     return 0;
