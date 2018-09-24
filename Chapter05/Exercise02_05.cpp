@@ -23,41 +23,37 @@ int main() {
     int correctCount = 0; // Count the number of correct answers
     int count = 0; // Count the number of questions
     long startTime = time(0);
-    string output = " "; // output string is initially empty
     
     srand(time(0));  //Set the seed of rand function
     
     while (count < NUMBER_OF_QUESTIONS) {
-         // 1. Generate two random integers between 1 and 15
-         int number1 = (int)(rand() % 15) + 1;
-         int number2 = (int)(rand() % 15) + 1;
+        // 1. Generate two random integers between 1 and 15
+        int number1 = (int)(rand() % 15) + 1;
+        int number2 = (int)(rand() % 15) + 1;
     
-         // 2. Prompt the student to answer "What is number1 + number2?"
-         cout << "What is " << number1 << " + " << number2 << "? ";
-         int answer;
-         cin >> answer;
+        // 2. Prompt the student to answer "What is number1 + number2?"
+        cout << "What is " << number1 << " + " << number2 << "? ";
+        int answer;
+        cin >> answer;
         
-         // 3. Grade the answer and display the result
-         if (number1 + number2 == answer) {
-             cout << "You are correct!" << endl;
-             correctCount++; // Increase the correct answer count
-         }
-         else
-             cout << "Your answer is wrong." << endl << number1 << " + " 
-                     << number2 << " should be " << (number1 + number2);
-         
-         // Increase the question count
-         count++;
-         
-         output = output + "\n" + number1 + "+" + number2 + "=" + answer +
-                 ((number1 + number2 == answer) ? " correct" : " wrong");
+        // 3. Grade the answer and display the result
+        if (number1 + number2 == answer) {
+            cout << "You are correct!" << endl;
+            correctCount++; // Increase the correct answer count
+        }
+        else
+            cout << "Your answer is wrong." << endl << number1 << " + " 
+                    << number2 << " should be " << (number1 + number2);
+        
+        // Increase the question count
+        count++;
         }
     
     long endTime = time(0);
     long testTime = endTime - startTime;
     
     cout << "Correct count is " << correctCount << endl << "Test time is " 
-            << testTime / 1000 << " seconds" << endl << output;
+            << testTime / 1000 << " seconds" << endl;
 
     return 0;
 }
