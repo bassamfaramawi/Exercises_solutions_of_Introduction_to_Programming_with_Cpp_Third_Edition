@@ -22,8 +22,9 @@
 using namespace std;
 
 int main() {
-    const double MILIMETER_PER_INCH = 0.039;  // Print the header
+    const double MILIMETER_PER_INCH = 0.039; 
     
+    // Print the header
     cout << left << setw(18) << "Millimeters" << "Inches" << endl;
     
     for(int n = 2; n < 100; n += 2)  // Loop for the table body
