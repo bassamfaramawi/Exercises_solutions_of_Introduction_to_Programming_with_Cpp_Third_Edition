@@ -11,10 +11,10 @@
  */
 
 /* 
- * File:   Exerecise20_05.cpp
+ * File:   Exercise20-05C.cpp
  * Author: BASSAM FARAMAWI / tiodaronzi3@yahoo.com
  *
- * Created on September 29, 2018, 5:52 PM
+ * Created on September 30, 2018, 5:52 AM
  */
 
 #include <iostream> // For the cin & cout functions
@@ -22,17 +22,24 @@
 using namespace std;
 
 int main() {
-    cout << "Pattern A" << endl;
+    cout << "Pattern C" << endl;
     
-    for(int n = 1; n <= 6; n++) {
-        for (int i = 1; i <= 6; i++)  {
-            if(n == 1 || n == 6 || i == 1 || i == 6)
-                cout << i;
-            else
-                cout << " ";
-        }
+    for(int n = 0; n <= 3; n++) {
+        for(int i = 0; i < 4 - n; i++)
+            cout << "  ";
+        for(int i = 0; i < n; i++)
+            cout << "3 ";
         cout << endl;
     }
+    
+    for(int n = 2; n > 0; n--) {
+        for(int i = 4 - n; i > 0; i--)
+            cout << "  ";
+        for(int i = 0; i  < n; i++)
+            cout << "3 ";
+        cout << endl;
+    }
+    
     return 0;
 }
 
