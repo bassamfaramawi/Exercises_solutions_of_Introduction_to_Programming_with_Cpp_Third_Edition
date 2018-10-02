@@ -34,38 +34,38 @@ int main() {
     string guessName ="",
             computerName = " ";    // Initialize guess and computer names
         
-        switch(computer) {  // Assign computer names
-            case 0: computerName = "scissor";
-                    break;
-            case 1: computerName = "rock";
-                    break;
-            case 2: computerName = "paper";
-                    break;
-        }
-        
-        switch(guess) {  // Assign user guess names
-            case 0: guessName = "scissor";
-                    break;
-            case 1: guessName = "rock";
-                    break;
-            case 2: guessName = "paper";
-                    break;
-        }
-        
-        // Check won or draw or lose and display the result
-        if(guess == computer)
-            cout << "The computer is " << computerName << ". You are " << 
-                    guessName << " too. It is a draw";
-        else if((computer == 0 && guess == 2) ||
-                (computer == 1 && guess == 0) ||
-                (computer == 2 && guess == 1) )
-            cout << "The computer is " << computerName << ". You are " << 
-                    guessName << ". You lose";
-        else if((computer == 2 && guess == 0) ||
-                (computer == 0 && guess == 1) ||
-                (computer == 1 && guess == 2) )
-            cout << "The computer is " << computerName << ". You are " << 
-                    guessName << ". You won";
+    switch(computer) {  // Assign computer names
+        case 0: computerName = "scissor";
+                break;
+        case 1: computerName = "rock";
+                break;
+        case 2: computerName = "paper";
+                break;
+    }
+    
+    switch(guess) {  // Assign user guess names
+        case 0: guessName = "scissor";
+                break;
+        case 1: guessName = "rock";
+                break;
+        case 2: guessName = "paper";
+                break;
+    }
+    
+    // Check won or draw or lose and display the result
+    if(guess == computer)
+        cout << "The computer is " << computerName << ". You are " << 
+                guessName << " too. It is a draw";
+    else if((computer == 0 && guess == 2) ||
+            (computer == 1 && guess == 0) ||
+            (computer == 2 && guess == 1) )
+        cout << "The computer is " << computerName << ". You are " << 
+                guessName << ". You lose";
+    else if((computer == 2 && guess == 0) ||
+            (computer == 0 && guess == 1) ||
+            (computer == 1 && guess == 2) )
+        cout << "The computer is " << computerName << ". You are " << 
+                guessName << ". You won";
 
     return 0;
 }
