@@ -18,9 +18,7 @@ using namespace std;
 int main() {
     //Prompt the user to enter a three-digit integer
     cout << "Enter a three-digit integer: ";
-    // Receive value
     int number;
-    
     cin >> number;  // Receive value
     
     // Extract 1st and 3rd digits
