@@ -27,7 +27,7 @@ int main() {
     srand(time(0));
     int number = rand() % 100;
     
-    // Prompt the user to enter an integer for even or odd
+    // Prompt the user to enter a tow digit number
     cout << "Enter a prediction of a tow digit number: ";
     int prediction;
     
