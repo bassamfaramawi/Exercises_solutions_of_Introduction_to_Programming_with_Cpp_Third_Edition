@@ -26,25 +26,25 @@ int main() {
     string s2;
     getline(cin, s2);
     
-    string s = "";
+    string s;
     
     string longestCommonPrefix = "";  // Initialize the longest common prefix
     
-    int n = 0, 
-            i = 0;
-    
-    while(n < s1.length() || i < s2.length()) {
-        for(int k = 0; k < s2.length(); k++)  {
-            if(s1.at(n) == s2.at(k)) {
-                i = k;
-                while(s1.at(n) == s1.at(i)) {
-                    longestCommonPrefix += s1.at(n);
+    for(int n = 0; n < s1.length(); n++) {
+        for(int i = 0; i < s2.length(); i++) {
+            s = "";
+            while(s1.at(n) == s2.at(i)){
+                s += s2.at(i);
+                if(n < s1.length() - 1 && i < s2.length() - 1) {
                     n++;
                     i++;
                 }
-                
+                else break;
             }
+            if(longestCommonPrefix.length() < s.length()) 
+                longestCommonPrefix = s;
         }
+        
     }
     
     // If no common prefix between them
