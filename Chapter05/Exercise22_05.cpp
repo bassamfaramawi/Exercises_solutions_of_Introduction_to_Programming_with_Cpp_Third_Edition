@@ -44,8 +44,8 @@ int main() {
             }
         }
     
-    // Check if the next number is non-prime
-    number++;
+		// Check if the next number is non-prime
+		number++;
     }
 
     return 0;
